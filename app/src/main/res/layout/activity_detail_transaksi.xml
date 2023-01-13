@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingVertical="@dimen/_12sdp"
+    android:paddingHorizontal="@dimen/_36sdp"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="@dimen/_180sdp"
+        android:layout_height="wrap_content"
+        android:text="Detail"
+        android:textSize="35dp"
+        android:textColor="@color/font1"
+        android:fontFamily="@font/inter_w700"
+        android:textStyle="bold"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="@dimen/_240sdp"
+        android:layout_height="@dimen/_160sdp"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:src="@drawable/detail_asset"/>
+
+    <TextView
+        android:layout_marginTop="@dimen/_16sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date"
+        android:textColor="@color/font2"
+        android:fontFamily="@font/inter_w600"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_1sdp"
+        android:backgroundTint="@color/bg1"
+        app:cardCornerRadius="@dimen/_10sdp">
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="12/12/2022"
+            android:textSize="16dp"
+            android:fontFamily="@font/inter_w700"
+            android:textColor="@color/font4"
+            android:textStyle="bold"/>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <TextView
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Title"
+        android:textColor="@color/font2"
+        android:fontFamily="@font/inter_w600"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_1sdp"
+        android:backgroundTint="@color/bg1"
+        app:cardCornerRadius="@dimen/_10sdp">
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="12/12/2022"
+            android:textSize="16dp"
+            android:fontFamily="@font/inter_w700"
+            android:textColor="@color/font4"
+            android:textStyle="bold"/>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <TextView
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Amount"
+        android:textColor="@color/font2"
+        android:fontFamily="@font/inter_w600"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_1sdp"
+        android:backgroundTint="@color/bg1"
+        app:cardCornerRadius="@dimen/_10sdp">
+        <TextView
+            android:id="@+id/tv_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="12/12/2022"
+            android:textSize="16dp"
+            android:fontFamily="@font/inter_w700"
+            android:textColor="@color/font4"
+            android:textStyle="bold"/>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_done"
+        android:layout_width="@dimen/_140sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_44sdp"
+        android:layout_gravity="center_horizontal"
+        app:cornerRadius="@dimen/_16sdp"
+        app:backgroundTint="@color/bg1"
+        android:text="Done"
+        android:textSize="20dp"
+        android:fontFamily="@font/inter_w600"
+        android:textColor="@color/font2"
+        android:textAllCaps="false"
+        android:textStyle="bold"/>
+
+</LinearLayout>

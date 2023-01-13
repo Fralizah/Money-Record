@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingVertical="@dimen/_12sdp"
+    android:paddingHorizontal="@dimen/_36sdp"
+    android:background="@color/white"
+    android:orientation="vertical">
+    
+    <TextView
+        android:layout_width="@dimen/_180sdp"
+        android:layout_height="wrap_content"
+        android:text="Add
+        Transaction"
+        android:textSize="35dp"
+        android:textColor="@color/darkCornflowerBlue"
+        android:fontFamily="@font/inter_w700"/>
+    
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="@dimen/_240sdp"
+        android:layout_height="@dimen/_160sdp"
+        android:src="@drawable/input_asset"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_income"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Income"
+            android:textColor="@color/purple_200"
+            android:textSize="20dp"
+            android:fontFamily="@font/inter_w600"
+            android:textStyle="bold"/>
+
+        <RelativeLayout
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="wrap_content"/>
+
+        <RadioButton
+            android:id="@+id/rb_expense"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Expense"
+            android:textColor="@color/purple_200"
+            android:textSize="20dp"
+            android:fontFamily="@font/inter_w600"
+            android:textStyle="bold"/>
+
+    </RadioGroup>
+
+    <TextView
+        android:layout_marginTop="@dimen/_16sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date"
+        android:textColor="@color/darkCornflowerBlue"
+        android:fontFamily="@font/inter_w600"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/tf_date"
+        android:editable="false"
+        android:checked="true"
+        android:imeOptions="actionNext"
+        android:singleLine="true"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:drawableRight="@drawable/ic_calendar"/>
+
+    <TextView
+        android:layout_marginTop="@dimen/_4sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Title"
+        android:textColor="@color/darkCornflowerBlue"
+        android:fontFamily="@font/inter_w600"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+    <com.google.android.material.textfield.MaterialAutoCompleteTextView
+        android:id="@+id/tf_title"
+        android:imeOptions="actionNext"
+        android:singleLine="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_marginTop="@dimen/_4sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Amount"
+        android:textColor="@color/darkCornflowerBlue"
+        android:fontFamily="@font/inter_w600"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+    <com.google.android.material.textfield.MaterialAutoCompleteTextView
+        android:id="@+id/tf_amount"
+        android:inputType="number"
+        android:imeOptions="actionDone"
+        android:singleLine="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_done"
+        android:layout_width="@dimen/_140sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_gravity="center_horizontal"
+        app:cornerRadius="@dimen/_20sdp"
+        app:backgroundTint="@color/bg1"
+        android:text="Done"
+        android:textSize="20dp"
+        android:fontFamily="@font/inter_w600"
+        android:textColor="@color/font4"
+        android:textAllCaps="false"
+        android:textStyle="bold"/>
+
+</LinearLayout>

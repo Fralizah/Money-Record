@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/blueYonder"
+    android:gravity="center_horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:src="@drawable/logoapp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Money Record"
+            android:textSize="@dimen/_20sdp"
+            android:lineHeight="@dimen/_24sdp"
+            android:fontFamily="@font/inter_w700"
+            android:textColor="@color/white"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_signin"
+            android:text="Sign In"
+            android:fontFamily="@font/inter_w700"
+            android:textSize="16dp"
+            android:layout_marginTop="@dimen/_28sdp"
+            android:backgroundTint="@color/darkCornflowerBlue"
+            android:layout_width="@dimen/_253sdp"
+            android:layout_height="@dimen/_46sdp"
+            app:cornerRadius="@dimen/_50sdp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_createaccount"
+            android:text="Create An Account"
+            android:fontFamily="@font/inter_w700"
+            android:textSize="16dp"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:backgroundTint="@color/transparan"
+            app:strokeWidth="1dp"
+            app:strokeColor="@color/white"
+            android:layout_width="@dimen/_253sdp"
+            android:layout_height="@dimen/_46sdp"
+            app:cornerRadius="@dimen/_50sdp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
